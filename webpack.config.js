@@ -1,5 +1,5 @@
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+// require("regenerator-runtime/runtime.js");
 
 module.exports = {
   module: {
@@ -13,13 +13,13 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        loader: "url-loader?limit=100000",
       },
       {
         test: /\.css$/,
-        loaders: [ 'style-loader', 'css-loader' ],
+        loaders: ["style-loader", "css-loader"],
         // use: [MiniCssExtractPlugin.loader, 'css-loader']
-      }
+      },
     ],
   },
 };
